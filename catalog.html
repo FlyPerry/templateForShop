@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome --><!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css" rel="stylesheet">
+  <!-- jQuery, Popper.js и Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <title>TechShed</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">TechShed</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+          aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="#">Начальная страница</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Каталог</a></li>
+
+      <!-- Dropdown for City Selection -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="cityDropdown" role="button" data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false">
+          Город: Москва
+        </a>
+        <div class="dropdown-menu" aria-labelledby="cityDropdown">
+          <a class="dropdown-item" href="#">Москва</a>
+          <a class="dropdown-item" href="#">Санкт-Петербург</a>
+          <a class="dropdown-item" href="#">Алматы</a>
+          <a class="dropdown-item" href="#">Астана</a>
+        </div>
+      </li>
+
+      <!-- Language Selection with Flags -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false">
+          <img src="https://flagcdn.com/16x12/ru.png" alt="Русский"> Русский
+        </a>
+        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+          <a class="dropdown-item" href="#"><img src="https://flagcdn.com/16x12/ru.png" alt="Русский"> Русский</a>
+          <a class="dropdown-item" href="#"><img src="https://flagcdn.com/16x12/kz.png" alt="Қазақша"> Қазақша</a>
+        </div>
+      </li>
+
+      <!-- Login/Register Button with User Icon -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa fa-user" aria-hidden="true"></i> Вход / Регистрация
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section class="catalog py-5">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar for categories -->
+      <div class="col-md-3">
+        <div class="sidebar">
+          <h5>Выберите категорию</h5>
+          <ul class="category-list">
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Computers</a></li>
+            <li><a href="#">Drones & Cameras</a></li>
+            <li><a href="#" class="active">Headphones</a></li>
+            <li><a href="#">Home Page Best Sellers</a></li>
+            <li><a href="#">Home Page Sale</a></li>
+            <li><a href="#">Mobile</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Tablets</a></li>
+            <li><a href="#">TV & Home Cinema</a></li>
+            <li><a href="#">Wearable Tech</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Product grid -->
+      <div class="col-md-9">
+        <h5 class="products-count">Товаров: 8</h5>
+        <div class="row">
+          <!-- Product item -->
+          <div class="col-md-4 mb-4">
+            <div class="product-item">
+              <img src="https://via.placeholder.com/200" alt="Balo Headphones" class="img-fluid">
+              <p>Balo Headphones 700 Wireless Noise Cancelling</p>
+            </div>
+          </div>
+          <!-- Repeat for more products -->
+          <div class="col-md-4 mb-4">
+            <div class="product-item">
+              <img src="https://via.placeholder.com/200" alt="Certified Pantony" class="img-fluid">
+              <p>Certified Pantony Buds Wireless Earbud Headphones</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="product-item">
+              <img src="https://via.placeholder.com/200" alt="Drums Pro" class="img-fluid">
+              <p>Drums Pro Wireless On-Ear Headphones</p>
+            </div>
+          </div>
+          <!-- Add more product items -->
+          <div class="col-md-4 mb-4">
+            <div class="product-item">
+              <img src="https://via.placeholder.com/200" alt="In-ear Noise Cancelling" class="img-fluid">
+              <p>In-ear Noise Cancelling & Isolating Wireless Earbuds</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="product-item">
+              <img src="https://via.placeholder.com/200" alt="MX50 Wired Earbud" class="img-fluid">
+              <p>MX50 Wired Earbud Headphones</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="product-item">
+              <img src="https://via.placeholder.com/200" alt="Space Buds" class="img-fluid">
+              <p>Space Buds True Wireless Earbud Headphones</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="product-item">
+              <img src="https://via.placeholder.com/200" alt="Surround Sound" class="img-fluid">
+              <p>Surround Sound 10.2 Gaming Headset</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="product-item">
+              <img src="https://via.placeholder.com/200" alt="White Buds" class="img-fluid">
+              <p>White Buds Wireless Earbud Headphones</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Store Location</h5>
+        <p>Address: 123 City</p>
+        <p>Phone: 7777777777</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Shop</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white">Computers</a></li>
+          <li><a href="#" class="text-white">Tablets</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Customer Support</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
