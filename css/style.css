@@ -100,10 +100,40 @@ body {
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  min-height: 100%;
 }
 
 .catalog .product-item p {
   margin-top: 10px;
   font-size: 14px;
   color: #333;
+}
+ .navbar {
+   border-bottom: 1px solid #ddd;
+ }
+.product-main {
+  padding: 20px 0;
+}
+.product-image img {
+  width: 100%;
+}
+.product-details h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.similar-products .card {
+  margin: 10px;
+}
+
+.footer {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+}
+.footer a {
+  color: #000;
+  text-decoration: none;
+}
+.footer .social-media a {
+  margin: 0 10px;
+  color: #000;
 }
